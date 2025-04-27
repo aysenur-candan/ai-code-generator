@@ -1,5 +1,8 @@
 # AI Code Generator - Docker ve Kubernetes Dağıtımı
 
+
+![alt text](images/image.png)
+
 Bu proje, yapay zeka destekli bir kod üretme uygulamasını içermektedir. Docker ve Kubernetes kullanılarak yerel ortamda çalıştırılabilir ve dağıtılabilir.
 
 ## İçindekiler
@@ -64,6 +67,3 @@ Minikube kümesini başlatmak için şu komutu kullanın:
 
 ```bash
 minikube start
-
-
-![alt text](images/image.png)
