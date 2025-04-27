@@ -64,3 +64,6 @@ Minikube kümesini başlatmak için şu komutu kullanın:
 
 ```bash
 minikube start
+
+
+![alt text](images/image.png)
