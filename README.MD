@@ -1,9 +1,8 @@
 # AI Code Generator - Docker ve Kubernetes Dağıtımı
-
+Bu proje, yapay zeka destekli bir kod üretme uygulamasını içermektedir. Docker ve Kubernetes kullanılarak yerel ortamda çalıştırılabilir ve dağıtılabilir.
 
 ![alt text](images/image.png)
 
-Bu proje, yapay zeka destekli bir kod üretme uygulamasını içermektedir. Docker ve Kubernetes kullanılarak yerel ortamda çalıştırılabilir ve dağıtılabilir.
 
 ## İçindekiler
 
