@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Yapay Zekâ Kod Üretici</title>
+</head>
+<body>
+    <h1>Yapay Zekâ Destekli Kod Üretici</h1>
+    <form id="codeForm">
+        <label for="prompt">Prompt girin:</label><br>
+        <textarea id="prompt" name="prompt" rows="4" cols="50" required></textarea><br><br>
+        <button type="submit">Kodu Üret</button>
+    </form>
+
+    <h2>Üretilen Başlık</h2>
+    <p id="title"></p>
+
+    <h2>Üretilen Kod</h2>
+    <pre id="code" style="background-color:#f4f4f4; padding:10px;"></pre>
+
+    <script>
+        document.getElementById('codeForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const prompt = document.getElementById('prompt').value;
+
+            fetch('/generate', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ prompt: prompt })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('title').innerText = data.title;
+                document.getElementById('code').innerText = data.code;
+            })
+            .catch(error => {
+                alert('Hata oluştu: ' + error);
+            });
+        });
+    </script>
+</body>
+</html>
